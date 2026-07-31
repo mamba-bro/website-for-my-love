@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dew</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- ==== The Loading Screen (Starts Visible) ==== -->
+    <!-- ============================================= -->
+    <div id="loading-screen" class="active">
+        <div class="loading-content">
+            <h1>Just for you AAAA...</h1>
+            <p>CLICK THE BUTTON BELOWWWWWWW...</p>
+            <button id="enter-button" class="action-button">Click to Enter</button>
+        </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- ==== PAGE 1: The Memories Page (Starts Hidden) ==== -->
+    <!-- ============================================= -->
+    <div id="page-main" class="page">
+        <div class="container">
+            <h1>For my Dewanmi</h1>
+            <!-- Section 1: The Proposal -->
+            <div class="photo-text-section">
+                <img src="images/screenshot.jpeg" alt="Proposal Screenshot">
+                <div class="text">
+                    <h2>The Start of Everything</h2>
+                    <p>The moment when you said that u like me and then that run thing gave me butterflies in my heart and even now when i look back to it i keep on smiling because that was the best decission i could have ever made i loved u back then and now i love you even more, more then anyone i could have ever loved, i keep on blushing just by reading these AAAAAAAAAAAAAAA i was so happy that day i remember sleeping while smiling and my heart fluttering for you.</p>
+                </div>
+            </div>
+            <!-- Section 2: Her Beauty -->
+            <div class="photo-text-section reverse">
+                <img src="images/her.jpeg" alt="Beautiful photo of Dewanmi">
+                <div class="text">
+                    <h2>How I See You</h2>
+                    <p>"i love you so much my baby like just see those eyes all my world exists right there your eyes are so fucking gorgeous i can keep on looking at them forever and actually everyday i wanna wakeup looking right into that, i love your neck your ears your cheeks your waist(so much) your hands your fingers your everything you are just so gorgeous"</p>
+                    <p>"if you could leave your body and obtain my body and see yourself from my eyes then you will realise how precious you actually are to me and how much this guy loves you and is ready to sacrifice what not just to see you happy and healthy"</p>
+                </div>
+            </div>
+            <!-- Section 3: The Connection -->
+            <div class="photo-text-section">
+                <img src="images/her2.jpeg" alt="Another photo of Dewanmi">
+                <div class="text">
+                    <h2>It Feels Like...</h2>
+                    <p>i said the same thing to you on our first anniversary that is 22nd of january 2026 that it feels like we know each other since years well guess what we are so so close to our 1 year anniversery and then we can actually say that we know and love each other since more then a year hehe it feels like i know u since the eternity.. it feels like i have always loved you and my choices led to me i love you baby my cutie pie i love u so so fucking much you are just so precious to me let's look forward to many happy girlfriends day many anniversaries and many more things together.</p>
+                </div>
+            </div>
+            <button class="action-button" onclick="showPage('page-letter')">I Wrote Something For You</button>
+        </div>
+    </div>
+
+    <!-- ================================= -->
+    <!-- ==== PAGE 2: The Letter Page ==== -->
+    <!-- ================================= -->
+    <div id="page-letter" class="page">
+        <div class="container">
+            <h1>My Dearest Love,</h1>
+            <div class="letter-content">
+Dear dewanmi,
+
+It's been over 222 days or 5328 hours or 319,680 minutes since the day i asked you out all of these months have been a blessing to me i have enjoyed and felt loved because of someone(you obv) and we have made so so many memories since then.
+
+
+
+i still remember the day when we called for the first day or the days in the start where u reached out to me because i was lonely and healed me into regaining the trust over discord and these people out there and the days where u were busy before december in november where u once even said that "sorry it was my brother who texted hi to me " when i read that it was so so funny HAHA and i remember the day when u called me a good boy for the first time or the days before we started dating where we were flirting or the time when i made a notes ( december 17th 2025 ) with the title as potential gf and here you are now with me and hopefully happy with me tho sometimes i u get mad with me because of my mistakes but at the end of the day we are together and im so so happy to have you in my life i never imagined that you will accept my proposel but you did and it was the best choice of my life to take a risk all these months have been so fun because of me having a good memory i remember everything i love you and i care so much about you idfc about anyone other then you because you were the one who reached out and healed me when i was all lonely, sorry for acting like a dumbass sometimes or being clingy but im trying myself to not dm you much so that you can focus on your studies and everything but this doesn't mean that i don't love you.. i love you very very veyryyyyyy mcuhhhhhh hehehehehe.
+
+
+
+i wish we have a happy future in front of us and we stay together through many many special days and the days when i come to meet you and we can hold hands hug each other kiss each other and do everything we could have imagined about from cooking together to watching movies or just laying in a spoon position.. i love you my baby mmmmwwwaaahhhhhhhhhhhh
+
+Yours lovely,
+
+Vaibhav your hubby
+            </div>
+            <a class="letter-link" onclick="showPage('page-proposal')">click me, my love...</a>
+        </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- ==== PAGE 3: The Proposal Page (NEW ANIMATION) ==== -->
+    <!-- ============================================= -->
+    <div id="page-proposal" class="page">
+        <div class="container final-container">
+            <canvas id="heart-canvas" width="500" height="500"></canvas>
+            <div class="final-buttons">
+                <button onclick="showPage('page-married')">YESSSSSSSSSS</button>
+                <button id="no-button" onmouseover="runAway(this)">NOO</button>
+            </div>
+        </div>
+    </div>
+
+<!-- ======================================== -->
+<!-- ==== PAGE 4: The "We're Married" Page ==== -->
+<!-- ======================================== -->
+<div id="page-married" class="page">
+    <!-- This is the new card structure that uses our CSS -->
+    <div class="married-card">
+        
+        <!-- The roses image -->
+        <img src="images/roses.jpeg" alt="A bouquet of red roses" class="married-card-image">
+
+        <!-- The text content -->
+        <div class="married-card-text">
+            <h2>It's Official!</h2>
+            <p>On 1st August 2026, Vaibhav Katiyar and Dewanmi Nilanya Katiyar are officially married.</p>
+            <button class="married-card-button" onclick="showPage('page-surprise')">click me for a surprise hehehe</button>
+        </div>
+
+    </div>
+</div>
+
+    <!-- ====================================== -->
+    <!-- ==== PAGE 5: The Gift Surprise Page ==== -->
+    <!-- ====================================== -->
+    <div id="page-surprise" class="page">
+        <div class="container final-container">
+            <div class="final-text-box">
+                <p class="surprise-text">
+                    did you think that's it? noooo happy girlfriends day my love my sunshine my baby my panda actually it's a happy wife's day hehe
+                </p>
+                <h2 class="gift-text">a marriage without gifts? hell naawwwww</h2>
+                <a href="YOUR_DISCORD_GIFT_LINK_HERE" class="action-button">claim your gifts from ur hubby</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============================== -->
+    <!-- ==== AUDIO ELEMENT ==== -->
+    <!-- =============================== -->
+    <audio id="background-music" loop>
+        <source src="audio/love-story.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- ========================================== -->
+    <!-- ==== JAVASCRIPT LOGIC (FINAL VERSION) ==== -->
+    <!-- ========================================== -->
+    <script>
+        const loadingScreen = document.getElementById('loading-screen');
+        const enterButton = document.getElementById('enter-button');
+        const music = document.getElementById('background-music');
+        let animationHasRun = false; 
+
+        // --- Main function to start the website experience ---
+        if (enterButton) {
+            enterButton.addEventListener('click', () => {
+                music.play();
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                    document.getElementById('page-main').classList.add('active');
+                }, 500);
+            });
+        }
+
+        // --- Function to switch between pages ---
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            const newPage = document.getElementById(pageId);
+            newPage.classList.add('active');
+            window.scrollTo(0, 0);
+
+            if (pageId === 'page-proposal' && !animationHasRun) {
+                startHeartAnimation();
+                animationHasRun = true;
+            }
+        }
+
+        // --- Logic for the runaway "No" button ---
+        const noButton = document.getElementById('no-button');
+        let chaseCounter = 0;
+        function runAway(button) {
+            chaseCounter++;
+            const vpHeight = window.innerHeight - 50;
+            const vpWidth = window.innerWidth - 100;
+            button.style.position = 'absolute';
+            button.style.top = Math.abs(Math.random() * vpHeight) + 'px';
+            button.style.left = Math.abs(Math.random() * vpWidth) + 'px';
+
+            if (chaseCounter === 1) setTimeout(() => { button.innerText = "are u sure?"; }, 200);
+            if (chaseCounter === 2) setTimeout(() => { button.style.fontWeight = 'bold'; }, 200);
+            if (chaseCounter === 3) setTimeout(() => { button.innerText = "no is not an option"; }, 200);
+            if (chaseCounter > 3) {
+                button.innerText = "yes i want to";
+                button.onclick = () => showPage('page-married');
+                button.onmouseover = null;
+            }
+        }
+
+        // --- THE HEART ANIMATION LOGIC ---
+        function startHeartAnimation() {
+            const canvas = document.getElementById('heart-canvas');
+            const ctx = canvas.getContext('2d');
+            const points = [];
+            const scales = [11, 12, 13, 14, 15, 16];
+
+            scales.forEach(scale => {
+                for (let i = 0; i < 120; i++) {
+                    const angle = i * (Math.PI * 2) / 120;
+                    const x = 16 * (Math.sin(angle) ** 3) * scale;
+                    const y = -(13 * Math.cos(angle) - 5 * Math.cos(2 * angle) - 2 * Math.cos(3 * angle) - Math.cos(4 * angle)) * scale;
+                    points.push({ x, y });
+                }
+            });
+
+            let currentPoint = 0;
+            const pointsPerFrame = 15;
+
+            function draw() {
+                if (currentPoint >= points.length) {
+                    fadeInText();
+                    return;
+                }
+                ctx.save();
+                ctx.translate(canvas.width / 2, canvas.height / 2);
+                const endPoint = Math.min(currentPoint + pointsPerFrame, points.length);
+                for (let i = currentPoint; i < endPoint; i++) {
+                    const p = points[i];
+                    ctx.fillStyle = "#ffb6c1";
+                    ctx.fillRect(p.x, p.y, 2, 2);
+                }
+                ctx.restore();
+                currentPoint += pointsPerFrame;
+                requestAnimationFrame(draw);
+            }
+
+            function fadeInText() {
+                let alpha = 0;
+                const textLines = ["Will", "you", "be my manali ji?"];
+                
+                function fade() {
+                    if (alpha >= 1) return;
+                    ctx.fillStyle = "black";
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    ctx.save();
+                    ctx.translate(canvas.width / 2, canvas.height / 2);
+                    points.forEach(p => {
+                        ctx.fillStyle = "#ffb6c1";
+                        ctx.fillRect(p.x, p.y, 2, 2);
+                    });
+                    ctx.restore();
+                    ctx.fillStyle = `rgba(255, 182, 193, ${alpha})`;
+                    ctx.font = "bold 48px 'Dancing Script', cursive";
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+                    const lineHeight = 55;
+                    const startY = (canvas.height / 2) - (lineHeight * (textLines.length - 1) / 2);
+                    textLines.forEach((line, index) => {
+                        ctx.fillText(line, canvas.width / 2, startY + (index * lineHeight));
+                    });
+                    alpha += 0.02;
+                    requestAnimationFrame(fade);
+                }
+                fade();
+            }
+            draw();
+        }
+    </script>
+</body>
+</html>

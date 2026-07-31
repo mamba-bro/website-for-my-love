@@ -1,0 +1,154 @@
+/* --- FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Nunito+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+/* --- GENERAL STYLING --- */
+body {
+    background-color: #fcf4f8;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #5C4B51;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.page {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.page.active { display: flex; }
+
+.container {
+    max-width: 850px;
+    width: 100%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px 0 rgba(173, 127, 149, 0.15);
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2 { font-family: 'Caveat', cursive; color: #a87b99; font-weight: 500; }
+h1 { font-size: 3.5em; }
+h2 { font-size: 3em; margin-bottom: 0; }
+p { font-size: 1.1em; line-height: 1.8; font-weight: 300; }
+
+/* --- PAGE 1: MEMORIES LAYOUT --- */
+.photo-text-section { display: flex; align-items: center; margin: 50px 0; text-align: left; }
+.photo-text-section.reverse { flex-direction: row-reverse; text-align: right; }
+.photo-text-section img { width: 300px; height: 300px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+.photo-text-section .text { flex: 1; padding: 0 40px; }
+
+/* --- PAGE 2: LETTER --- */
+.letter-content { background-color: #fff; padding: 40px; border: 1px solid #f0e6eb; text-align: left; white-space: pre-wrap; font-size: 1.3em; line-height: 1.8; font-family: 'Georgia', serif; color: #333; }
+.letter-link { font-family: 'Caveat', cursive; font-size: 2em; color: #a87b99; text-decoration: none; cursor: pointer; margin-top: 30px; display: inline-block; border-bottom: 2px dotted #d3bccc; }
+.letter-link:hover { color: #5C4B51; }
+
+/* --- SHARED STYLES FOR FINAL PAGES --- */
+.final-container { background: none; box-shadow: none; padding: 10px; }
+.action-button { margin-top: 25px; border: 1px solid #d3bccc; border-radius: 8px; font-size: 16px; text-decoration: none; color: #5C4B51; background-color: transparent; transition: all 0.3s ease; cursor: pointer; padding: 12px 30px; }
+.action-button:hover { background-color: #a87b99; color: white; border-color: #a87b99; transform: scale(1.05); }
+
+/* --- STYLES FOR PAGE 4 & 5 --- */
+.marriage-announcement h2 { font-family: 'Dancing Script', cursive; font-size: 3em; color: #a87b99; }
+.marriage-announcement p { font-family: 'Nunito Sans', sans-serif; font-size: 1.3em; color: #5C4B51; line-height: 1.7; }
+.final-text-box { background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 15px; margin-top: 20px; font-size: 1.2em; line-height: 1.7; color: #5C4B51; }
+.surprise-text { font-size: 1.4em; }
+.gift-text { font-size: 2.5em; font-family: 'Caveat', cursive; color: #a87b99; margin-top: 20px; }
+
+/* 
+==================================================
+   !!! NEW STYLES FOR THE PROPOSAL ANIMATION !!!
+==================================================
+*/
+#heart-canvas {
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Make it responsive */
+}
+
+.final-buttons button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 25px 8px 0 8px; /* More margin on top */
+    border: 1px solid #e0cde7;
+    border-radius: 6px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #5C4B51;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.final-buttons button:hover { background-color: rgba(255, 255, 255, 1); border-color: #d3bccc; }
+#no-button { position: relative; }
+
+/* 
+==================================================
+   !!! STYLES FOR THE ELEGANT MARRIED PAGE CARD !!!
+==================================================
+*/
+.married-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 50px rgba(211, 180, 199, 0.5);
+    max-width: 450px; /* This controls the medium size */
+    width: 100%;
+    margin: 20px;
+    padding: 0;
+}
+
+.married-card-image {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.married-card-text {
+    padding: 20px 30px 30px 30px;
+}
+
+.married-card-text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    font-style: italic;
+    color: #a87b99;
+}
+
+.married-card-text p {
+    font-size: 1.1em;
+    color: #5C4B51;
+}
+
+.married-card-button {
+    display: inline-block;
+    padding: 8px 18px;
+    margin-top: 20px;
+    border: 1px solid #e0cde7;
+    border-radius: 6px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #5C4B51;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.married-card-button:hover {
+    background-color: #fcf4f8;
+    border-color: #d3bccc;
+}
